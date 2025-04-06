@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Encoded Image</title>
+</head>
+
+<body>
+    <h2>Image with Hidden Message</h2>
+    <img src="{{ url_for('static', filename='uploads/' + image) }}" alt="Encoded Image">
+    <br><br>
+    <a href="/decode">Decode Message</a>
+</body>
+
+</html>
