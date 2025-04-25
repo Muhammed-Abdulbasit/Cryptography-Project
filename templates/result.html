@@ -2,14 +2,13 @@
 <html>
 
 <head>
-    <title>Encoded Image</title>
+    <title>Embedding Result</title>
 </head>
 
 <body>
-    <h2>Image with Hidden Message</h2>
-    <img src="{{ url_for('static', filename='uploads/' + image) }}" alt="Encoded Image">
-    <br><br>
-    <a href="/decode">Decode Message</a>
+    <h1>{{ result }}</h1>
+    <img src="/{{ image_url }}" alt="Encoded Image" style="max-width:500px">
+    <br><a href="/">Back</a>
 </body>
 
 </html>
